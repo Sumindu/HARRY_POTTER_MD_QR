@@ -68,59 +68,6 @@ const {
                         });
                         tsurue = link.data.split("/")[3]
                         await session.sendMessage(session.user.id, {
-                            text: "BLUE-LION;;;" + tsurue
+                            text: "DARK-SHADOW;;;" + tsurue
                         })
-                        await session.sendMessage(session.user.id, {
-                            text: `\n*ᴅᴇᴀʀ ᴜsᴇʀ ᴛʜɪs ɪs ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ*\n\n◕ ⚠️ *ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴛʜɪs ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴀs ɪᴛ ᴄᴏɴᴛᴀɪɴs ʀᴇǫᴜɪʀᴇᴅ ᴅᴀᴛᴀ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴛᴀɪʟs ᴀɴᴅ ᴀᴄᴄᴇss ʏᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ*`
-                        })
-                        const files = fs.readdirSync("./session");
-                        for (const file of files) {
-                          const data = fs.readFileSync("./session/" + file);
-                          zip.file(file, data);
-                        }
-                        zip
-                          .generateNodeStream({ type: "nodebuffer", streamFiles: true })
-                          .pipe(file.createWriteStream("session.zip"))
-                          .on("finish", async function () {
-                            await session.sendMessage(session.user.id, {
-                                document: {
-                                    url: './session.zip'
-                                },
-                                fileName: "session.zip",
-                                mimetype: "application/zip",
-                            });
-                            await fs.rm('./session', {
-                                recursive: true, force: true
-                            })
-                            process.send('reset')
-                          });
-                       
-                    }
-                    if (
-                        connection === "close" &&
-                        lastDisconnect &&
-                        lastDisconnect.error &&
-                        lastDisconnect.error.output.statusCode != 401
-                    ) {
-                        XAsena()
-                    }
-                })
-                session.ev.on('creds.update',
-                    saveCreds)
-                await delay(3000 * 10);
-                session.ev.on("messages.upsert",
-                    () => {})
-
-            }catch(err) {
-                console.log(
-                    err + "Unknown Error Occured Please report to Owner and Stay tuned"
-                );
-            }
-
-
-        }
-        XAsena()
-
-    })
-
-    app.listen(PORT, () => console.log("App listened on port", PORT));
+                        
