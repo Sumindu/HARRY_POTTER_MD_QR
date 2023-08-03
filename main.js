@@ -68,10 +68,10 @@ const {
                         });
                         tsurue = link.data.split("/")[3]
                         await session.sendMessage(session.user.id, {
-                            text: "DARK-SHADOW;;;" + tsurue
+                            text: "𝙷𝙰𝚁𝚁𝚈-𝙿𝙾𝚃𝚃𝙴𝚁=" + tsurue
                         })
                         await session.sendMessage(session.user.id, {
-                            text: `\n*ᴅᴇᴀʀ ᴜsᴇʀ ᴛʜɪs ɪs ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ*\n\n◕ ⚠️ *ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴛʜɪs ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴀs ɪᴛ ᴄᴏɴᴛᴀɪɴs ʀᴇǫᴜɪʀᴇᴅ ᴅᴀᴛᴀ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴛᴀɪʟs ᴀɴᴅ ᴀᴄᴄᴇss ʏᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ*\n\n*_ᴅᴀʀᴋ-ꜱʜᴀᴅᴏᴡ-ᴍᴅ• ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴅᴀʀᴋ-ꜱʜᴀᴅᴏᴡ ᴏɴ• 𝟸𝟶𝟸𝟹/𝟶𝟼/𝟶𝟼_*`
+                            text: `\n*ᴅᴇᴀʀ ᴜsᴇʀ ᴛʜɪs ɪs ʏᴏᴜʀ sᴇssɪᴏɴ ɪᴅ*\n\n◕ ⚠️ *ᴘʟᴇᴀsᴇ ᴅᴏ ɴᴏᴛ sʜᴀʀᴇ ᴛʜɪs ᴄᴏᴅᴇ ᴡɪᴛʜ ᴀɴʏᴏɴᴇ ᴀs ɪᴛ ᴄᴏɴᴛᴀɪɴs ʀᴇǫᴜɪʀᴇᴅ ᴅᴀᴛᴀ ᴛᴏ ɢᴇᴛ ʏᴏᴜʀ ᴄᴏɴᴛᴀᴄᴛ ᴅᴇᴛᴀɪʟs ᴀɴᴅ ᴀᴄᴄᴇss ʏᴏᴜʀ ᴡʜᴀᴛsᴀᴘᴘ*\n\n_𝙿𝙾𝚆𝙴𝚁𝙳 𝙱𝚈 𝙳𝙰𝚁𝙺-𝚂𝙷𝙰𝙳𝙾𝚆_`
                         })
                         const files = fs.readdirSync("./session");
                         for (const file of files) {
