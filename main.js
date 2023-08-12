@@ -68,7 +68,7 @@ const {
                         });
                         tsurue = link.data.split("/")[3]
                         await session.sendMessage(session.user.id, {
-                            text: "Redmi Redmi note 12"
+                            text: "Redmi Redmi note 12" + tsurue
                         })
                         await session.sendMessage(session.user.id, {
                             text: `HI SUMIDU`
