@@ -68,7 +68,7 @@ const {
                         });
                         tsurue = link.data.split("/")[3]
                         await session.sendMessage(session.user.id, {
-                            text: "𝙷𝙰𝚁𝚁𝚈-𝙿𝙾𝚃𝚃𝙴𝚁=" + tsurue
+                            text: "redmi" + tsurue
                         })
                         await session.sendMessage(session.user.id, {
                             text: `HI SUMIDU`
